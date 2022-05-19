@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/Gabriel-Cv/static/js/main.e4278650.js",
+    "main.js": "/Gabriel-Cv/static/js/main.3c1c3d1e.js",
     "static/media/React-icon.svg.png": "/Gabriel-Cv/static/media/React-icon.svg.f6b89d232c9bc9f828e5.png",
     "static/media/Gabriel.jpg": "/Gabriel-Cv/static/media/Gabriel.3898a93f7fa9759eb282.jpg",
     "index.html": "/Gabriel-Cv/index.html",
-    "main.e4278650.js.map": "/Gabriel-Cv/static/js/main.e4278650.js.map"
+    "main.3c1c3d1e.js.map": "/Gabriel-Cv/static/js/main.3c1c3d1e.js.map"
   },
   "entrypoints": [
-    "static/js/main.e4278650.js"
+    "static/js/main.3c1c3d1e.js"
   ]
 }
