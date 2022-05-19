@@ -2,13 +2,15 @@ import styled from '@emotion/styled'
 
 export const GridStyle = styled.div`
   border-radius: 100px;
+ 
 
+ 
   @keyframes scannig {
     from {
       width: 0;
     }
     to {
-      width: 17.5em;
+      width: 18.5em;
     }
   }
 
@@ -34,18 +36,38 @@ export const GridStyle = styled.div`
 export const Typography = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 15px;
+  
+
 `
 
 export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 15px;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
-  animation: cursor 600ms steps(60) infinite normal,
+  animation: cursor 300ms steps(60) infinite normal,
     scannig 4s 2s steps(60) infinite normal;
   white-space: nowrap;
-  overflow: hidden;
+   overflow: hidden;
+   
+  
+
 `;
  export const Img = styled.img`
    animation: rotate 1.5s infinite linear;
+    
+ `;
+
+ export const TypographyFront = styled.div`
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 25px;
+  text-align: center;
+    @media (max-width: 400px){
+      div{
+        background-color: aqua;
+      }
+    }
+
+
    
+  
  `;

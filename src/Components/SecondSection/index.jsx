@@ -1,4 +1,5 @@
 import { Grid } from '@mui/material'
+import { Sticky } from '../../Styles/GlobalStyled'
 import { Typography } from './style'
 
 export default function SectionTwo () {
@@ -12,9 +13,11 @@ export default function SectionTwo () {
 
   return (
     <>
+    <Sticky>
+
       <Grid container xs={12} justifyContent='center'>
-        <Grid item xs={8} mt={6} textAlign='center'>
-          <Typography style={{ fontSize: 50,  letterSpacing:15 }}>Experiencia</Typography>
+        <Grid item xs={12} mt={6} textAlign='center'>
+          <Typography style={{ fontSize: 45,  letterSpacing:15 }}>Experiencia</Typography>
           <Typography
             style={{
               fontSize: 25,
@@ -87,6 +90,7 @@ export default function SectionTwo () {
           </Grid>
         </Grid>
       </Grid>
+      </Sticky>
     </>
   )
 }

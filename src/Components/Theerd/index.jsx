@@ -53,8 +53,8 @@ export default function SectionTheer () {
     }
   ]
   return (
-    <Grid container xs={12} mt={15} justifyContent='center'>
-      <Grid item xs={6}>
+    <Grid container mt={15} justifyContent='center'>
+      <Grid item xs={12} md={12}  >
         <Typography
           fontSize={40}
           textAlign='center'
@@ -71,20 +71,20 @@ export default function SectionTheer () {
         >
           Conhecimento Adquirido em:
         </Typography>
-        <Grid item sx={12}>
-          <DivImage>
-            {listImage.map(item => (
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
-                <img
-                  src={`${item.img}`}
-                  srcSet={`${item.img}`}
-                  alt={item.title}
-                />
-              </motion.div>
-            ))}
-          </DivImage>
         </Grid>
-      </Grid>
+        <Grid container xs={12} justifyContent="center" >
+        <DivImage>
+          {listImage.map(item => (
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
+              <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+              />
+            </motion.div>
+          ))}
+        </DivImage>
+        </Grid>
     </Grid>
   )
 }

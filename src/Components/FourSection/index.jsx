@@ -14,9 +14,9 @@ export default function SectionFour () {
 
   return (
     <Footer>
-      <Grid container xs={12}>
-        <Grid item xs={4} style={{ marginTop: '50px' }}>
-          <Typography style={{ fontSize: '40px', color: 'white' }}>
+      <Grid container xs={12} md={12} sm={12}>
+        <Grid item xs={7} md={6} sm={6} style={{ marginTop: '50px' }}>
+          <Typography style={{ fontSize: '30px', color: 'white' }}>
             Contato
           </Typography>
           <Typography style={{ fontSize: '20px', color: 'white' }}>
@@ -32,8 +32,8 @@ export default function SectionFour () {
             Rua Geraldo do brumado - Grajaú
           </Typography>
         </Grid>
-        <Grid item xs={4} style={{ marginTop: '80px' }}>
-          <Typography style={{ fontSize: '40px', color: 'white' }}>
+        <Grid item xs={4} style={{ marginTop: '60px' }}>
+          <Typography style={{ fontSize: '30px', color: 'white' }}>
             Redes Sociais
           </Typography>
           <Link
@@ -56,7 +56,7 @@ export default function SectionFour () {
             Linkedin
           </Link>
         </Grid>
-        <Grid item xs={4} style={{ marginTop: '50px' }}>
+        <Grid item xs={12} style={{ marginTop: '60px' }}>
           <motion.div whileHover={{ scale: 0.6 }} whileTap={{ scale: 1.8 }}>
             <img
               src={Gabriel}

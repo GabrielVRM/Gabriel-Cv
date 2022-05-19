@@ -8,21 +8,21 @@ export default function App () {
   return (
     <>
       <Main style={{ height: '610vh' }}>
-        <Section style={{ height: '58%' }}>
+        <Section style={{ height: '70%' }}>
           <SectionOne />
         </Section>
         <Section
           style={{
-            height: '20%',
+            height: '25%',
             background: '#f7f7ff',
             borderRadius: '40%',
             width: '100%',
-            marginTop: '10px'
+            marginBottom:'400px',
           }}
         >
           <SectionTwo />
         </Section>
-        <Section style={{ height: '20%' }}>
+        <Section style={{ height: '18%' }}>
           <SectionTheer />
         </Section>
         <Section style={{ height: '7%' }}>

@@ -1,17 +1,10 @@
 import { motion } from 'framer-motion'
 import { useViewportScroll, useTransform } from 'framer-motion'
 import { Sticky } from '../../Styles/GlobalStyled'
-import { Typography, GridStyle, TypographyCursor, Img } from './style'
+import { Typography, GridStyle, TypographyCursor, Img, TypographyFront } from './style'
 import { Grid } from '@mui/material'
 import ReactIcon from '../../Img/React-icon.svg.png'
-// criação de props //
-// const Dados = {
-//    name:'Gabrel',
-//    Idade:'20 Anos',
-//    Cargo: 'Developer',
-//    Atuação: 'Front-End',
 
-// };
 const SectionOne = () => {
   const { scrollYProgress } = useViewportScroll()
   const framerOpacity = useTransform(scrollYProgress, [0, 0.551], [0, 1])
@@ -23,6 +16,8 @@ const SectionOne = () => {
 
   return (
     <>
+      {/* -------------------- Segunda Section do Site -------------------------- */}
+
       <Sticky className='first'>
         <motion.div
           style={{
@@ -32,20 +27,26 @@ const SectionOne = () => {
             right: 0,
             height: '100vh',
             opacity: framerOpacity,
-            scale: frameScale
+            scale: frameScale,
+            textAlign: 'center'
           }}
         >
-          <GridStyle style={{marginTop:'100px'}}>
-          <Typography style={{ fontSize: '50px' }}>
-                Front-end <br />
-                JavaScript - React js
-              </Typography>
-            <Img
-              src={ReactIcon}
-              style={{ width: '300px', marginTop: '100px' }}
-            />
-          </GridStyle>
+          <Grid container xs={12} justifyContent='center'>
+            <Grid item xs={12} >
+                <TypographyFront style={{ fontSize: '50px', textAlign:'center' }}>
+                  Front-end <br />
+                  JavaScript - React js
+                </TypographyFront>
+                <Img
+                  src={ReactIcon}
+                  style={{ width: '300px', marginTop: '10px' }}
+                />
+            </Grid>
+          </Grid>
         </motion.div>
+
+        {/* -------------------- Primeira Section do Site -------------------------- */}
+
         <motion.div
           style={{
             position: 'absolute',
@@ -57,14 +58,14 @@ const SectionOne = () => {
             scale: frameScaleSecond
           }}
         >
-          <GridStyle justifyContent='center'>
-            <TypographyCursor style={{ fontSize: '70px' }}>
-              Gabriel Vieira Reis Maximo
-            </TypographyCursor>
-          </GridStyle>
-           <Grid container xs={12} justifyContent='center' mt={0}>
+          <Grid container xs={12} justifyContent='center'>
+            <GridStyle>
+              <TypographyCursor style={{ fontSize: '70px' }}>
+                Gabriel Vieira Reis Maximo
+              </TypographyCursor>
+            </GridStyle>
             <Grid item xs={12}>
-              <Typography style={{ fontSize: '80px' }}>Developer</Typography>
+              <Typography style={{ fontSize: '80px',  }}>Developer</Typography>
             </Grid>
           </Grid>
         </motion.div>
