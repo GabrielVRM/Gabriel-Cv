@@ -60,7 +60,11 @@ export const TypographyCursor = styled.div`
 `;
  export const Img = styled.img`
    animation: rotate 1.5s infinite linear;
-    
+   @media (max-width:900px){
+    Img{
+       background-color: black;
+     }
+   }
  `;
 
  export const TypographyFront = styled.div`

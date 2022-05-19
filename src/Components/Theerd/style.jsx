@@ -13,9 +13,10 @@ export const DivImage = styled.div`
    @media (max-width:607px) {
     div {
       width: 80px;
-      padding: 10px 20px 30px 20px;
+      padding: 5px 5px 30px 20px;
       float: right;
       text-align: center;
+      margin: -5px;
     
 
       

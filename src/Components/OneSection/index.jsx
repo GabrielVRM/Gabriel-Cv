@@ -31,14 +31,14 @@ const SectionOne = () => {
             textAlign: 'center'
           }}
         >
-          <Grid container xs={12} justifyContent='center' mt={30}>
-                <TypographyFront style={{ fontSize: '40px', textAlign:'center' }}>
+          <Grid container xs={12} justifyContent='center' mt={10}>
+                <TypographyFront style={{ fontSize: '40px', textAlign:'center', marginTop:'40px' }}>
                   <span style={{fontSize:'30px'}}>Front-end </span><br />
                   JavaScript React js
                 </TypographyFront>
                 <Img
                   src={ReactIcon}
-                  style={{ width: '300px', marginTop: '10px' }}
+                  style={{ width: '250px', marginTop: '50px' }}
                 />
           </Grid>
         </motion.div>
