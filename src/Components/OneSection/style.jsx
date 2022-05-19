@@ -43,11 +43,17 @@ export const Typography = styled.div`
 export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 15px;
-  border-right: 2px solid rgba(0, 0, 0, 0.75);
-  animation: cursor 300ms steps(60) infinite normal,
-    scannig 4s 2s steps(60) infinite normal;
+  /* border-right: 2px solid rgba(0, 0, 0, 0.75); */
+  animation: cursor 300ms steps(30) infinite normal,
+    scannig 4s 2s steps(100) infinite normal;
   white-space: nowrap;
    overflow: hidden;
+   @media (max-width:372px){
+     div{
+       background-color: black;
+     }
+
+   }
    
   
 
@@ -61,13 +67,5 @@ export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 25px;
   text-align: center;
-    @media (max-width: 400px){
-      div{
-        background-color: aqua;
-      }
-    }
-
-
-   
   
  `;

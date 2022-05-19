@@ -31,17 +31,15 @@ const SectionOne = () => {
             textAlign: 'center'
           }}
         >
-          <Grid container xs={12} justifyContent='center'>
-            <Grid item xs={12} >
-                <TypographyFront style={{ fontSize: '50px', textAlign:'center' }}>
-                  Front-end <br />
-                  JavaScript - React js
+          <Grid container xs={12} justifyContent='center' mt={30}>
+                <TypographyFront style={{ fontSize: '40px', textAlign:'center' }}>
+                  <span style={{fontSize:'30px'}}>Front-end </span><br />
+                  JavaScript React js
                 </TypographyFront>
                 <Img
                   src={ReactIcon}
                   style={{ width: '300px', marginTop: '10px' }}
                 />
-            </Grid>
           </Grid>
         </motion.div>
 
@@ -63,10 +61,8 @@ const SectionOne = () => {
               <TypographyCursor style={{ fontSize: '70px' }}>
                 Gabriel Vieira Reis Maximo
               </TypographyCursor>
-            </GridStyle>
-            <Grid item xs={12}>
               <Typography style={{ fontSize: '80px',  }}>Developer</Typography>
-            </Grid>
+            </GridStyle>
           </Grid>
         </motion.div>
       </Sticky>

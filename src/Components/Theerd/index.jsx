@@ -53,13 +53,14 @@ export default function SectionTheer () {
     }
   ]
   return (
-    <Grid container mt={15} justifyContent='center'>
+    <Grid container justifyContent='center'>
       <Grid item xs={12} md={12}  >
         <Typography
           fontSize={40}
           textAlign='center'
           fontFamily='Raleway, sans-serif'
           marginBottom={1}
+          marginTop={20}
         >
           Linguagens e Frameworks
         </Typography>

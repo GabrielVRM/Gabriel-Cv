@@ -16,8 +16,8 @@ export default function SectionTwo () {
     <Sticky>
 
       <Grid container xs={12} justifyContent='center'>
+          <Typography style={{ fontSize: 35,  letterSpacing:12 }}>Experiencia</Typography>
         <Grid item xs={12} mt={6} textAlign='center'>
-          <Typography style={{ fontSize: 45,  letterSpacing:15 }}>Experiencia</Typography>
           <Typography
             style={{
               fontSize: 25,
