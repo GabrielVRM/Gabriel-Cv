@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
 
-export const Typography = styled.div`
+export const TypographySecondSection = styled.div`
  font-family: 'Raleway', sans-serif;
 `;

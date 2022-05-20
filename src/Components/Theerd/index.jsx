@@ -54,7 +54,7 @@ export default function SectionTheer () {
   ]
   return (
     <Grid container justifyContent='center'>
-      <Grid item xs={12} md={12}  >
+      <Grid item xs={12}   >
         <Typography
           fontSize={40}
           textAlign='center'
@@ -87,5 +87,10 @@ export default function SectionTheer () {
         </DivImage>
         </Grid>
     </Grid>
-  )
+
+
+)
+ 
 }
+
+ 

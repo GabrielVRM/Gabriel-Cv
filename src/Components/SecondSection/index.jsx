@@ -1,6 +1,6 @@
-import { Grid } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { Sticky } from '../../Styles/GlobalStyled'
-import { Typography } from './style'
+import { TypographySecondSection } from './style'
 
 export default function SectionTwo () {
   // const { scrollYProgress } = useViewportScroll()
@@ -15,10 +15,10 @@ export default function SectionTwo () {
     <>
     <Sticky>
 
-      <Grid container xs={12} justifyContent='center'>
-          <Typography style={{ fontSize: 35,  letterSpacing:12 }}>Experiencia</Typography>
-        <Grid item xs={12} mt={6} textAlign='center'>
-          <Typography
+      <Grid container xs={12} justifyContent='center'  >
+          <TypographySecondSection style={{ fontSize: 35,  letterSpacing:12 }}>Experiencia</TypographySecondSection>
+        <Grid item xs={12} mt={6} textAlign='center' >
+          <TypographySecondSection
             style={{
               fontSize: 25,
               marginBottom: 10,
@@ -30,15 +30,15 @@ export default function SectionTwo () {
             }}
           >
             Nave A vela <br />{' '}
-            <p style={{ fontSize: 16 }}>Jovem Aprendiz - 11/2019 a 01/2021 </p>
-          </Typography>
-          <Typography style={{ fontSize: 15 }}>
+            <p style={{ fontSize: 16,  }}>Jovem Aprendiz - 11/2019 a 01/2021 </p>
+          </TypographySecondSection>
+          <TypographySecondSection style={{ fontSize: 15, }}>
             Acompanhamento dos produtos da empresa, cuidando do SLA, analisando
             e criando Dashboards no Google Data Studio e Excel
-          </Typography>
+          </TypographySecondSection>
 <Grid/>
 <Grid item xs={12} textAlign='center' mt={6}> 
-          <Typography
+          <TypographySecondSection
             style={{
               fontSize: 25,
               marginBottom: 10,
@@ -50,8 +50,8 @@ export default function SectionTwo () {
           >
             Onepay <br />{' '}
             <p style={{ fontSize: 16 }}>estagiario de Ti - 06/2021 a 03/2021</p>
-          </Typography>
-          <Typography style={{ fontSize: 15 }}>
+          </TypographySecondSection>
+          <TypographySecondSection style={{ fontSize: 15}}>
             Realizei Suporte Técnico, Manutenção de Desktops, Atualização de
             Sistema Operacional (Windows e Ubunto), configurações de E-mail,
             auxiliei em projetos de Desenvolvimento, Trabalhei com Linguagens
@@ -61,10 +61,10 @@ export default function SectionTwo () {
             Realizei extrações no Banco de Dados, utilizando Mysql workbench e
             fiz atualizações nas tabelas, realizei upgrade na nossa landing page
             através do wordpress.
-          </Typography>
+          </TypographySecondSection>
           </Grid>
           <Grid item xs={12} textAlign='center' mt={6} >
-          <Typography
+          <TypographySecondSection
             style={{
               fontSize: 25,
               marginBottom: 10,
@@ -78,19 +78,44 @@ export default function SectionTwo () {
             <p style={{ fontSize: 16 }}>
               Analista de Ti - 03/2022 - Atualmente
             </p>
-          </Typography>
-          <Typography style={{ fontSize: 15 }}>
+          </TypographySecondSection>
+          <TypographySecondSection style={{ fontSize: 15 }}>
             Banco de Dados Mysql - Utilizando a Linguagem Sql manipulando dados
             para extrair relarorios e realizar updates, Suporte Tecnico em Geral
             ( manutenção em computadores e auxilio rotineiro com problemas de
             logica para excel ou linguagens de programação) Auxilio em problemas
             no Dashboard, utilizando React JS, Material UI. Manutenção na nossa
             landing Page com Wordpress.
-          </Typography>
+          </TypographySecondSection>
           </Grid>
+        </Grid>
+
+        <Grid item mt={20} >
+           <Typography style={{fontFamily:'Raleway', fontWeight:'600', fontSize:'40px', marginBottom:'40px'}}>
+             Cursos Realizados 
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+             Havard - introdução a Ciencias da Computação <span style={{fontSize:'20px'}}>concluido</span>
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+            JavaScript - Udemy <span style={{fontSize:'20px'}}>em andamento</span> 
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+Wise Up Online <span style={{fontSize:'20px'}}>em andamento</span>
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+Power Bi - udemy <span style={{fontSize:'20px'}}>concluido</span>  
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+            React - Udemy <span style={{fontSize:'20px'}}> em andamento </span> 
+           </Typography>
+           <Typography style={{fontFamily:'Raleway', fontSize:'30px'}}>
+            Typescript - Udemy  <span style={{fontSize:'20px'}}> em andamento </span>
+           </Typography>
+
         </Grid>
       </Grid>
       </Sticky>
     </>
   )
-}
+            }

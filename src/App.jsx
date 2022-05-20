@@ -1,6 +1,7 @@
 import SectionOne from './Components/OneSection'
 import SectionTwo from './Components/SecondSection'
 import SectionTheer from './Components/Theerd'
+import Cursos from './Components/Theerd'
 import SectionFour from './Components/FourSection'
 import { Main, Section } from './Styles/GlobalStyled'
 
@@ -25,7 +26,7 @@ export default function App () {
         <Section style={{ height: '18%' }}>
           <SectionTheer />
         </Section>
-        <Section style={{ height: '7%' }}>
+        <Section style={{ height:'auto', background:'#000000', }}>
           <SectionFour />
         </Section>
       </Main>

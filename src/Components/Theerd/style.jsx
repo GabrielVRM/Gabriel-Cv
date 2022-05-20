@@ -32,4 +32,6 @@ export const DivImage = styled.div`
 
     }
   } 
+
+  
 `

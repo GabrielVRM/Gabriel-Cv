@@ -1,7 +1,9 @@
-import { Grid, Link } from '@mui/material'
-import Gabriel from '../../Img/Gabriel.jpg'
-import { Footer, Typography } from './style'
+import { Grid, Link, Typography } from '@mui/material'
+import { Footer,Img } from './style'
 import { motion } from 'framer-motion'
+import { styled } from '@mui/material/styles';
+
+
 
 export default function SectionFour () {
   // const { scrollYProgress } = useViewportScroll()
@@ -11,65 +13,103 @@ export default function SectionFour () {
   //Segundo Motion
   // const framerOpacitySecond = useTransform(scrollYProgress, [0.3, 0], [0, 1])
   // const frameScaleSecond = useTransform(scrollYProgress, [1, 0.1], [0.1, 0.7])
+  const Root = styled('div')(({ theme }) => ({
+    [theme.breakpoints.down('md')]: {
+fontSize:'',
+},
+    [theme.breakpoints.up('md')]: {
+      fontSize:'90px'
 
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize:'180px'
+
+    },
+  }));
   return (
     <Footer>
-      <Grid container xs={12} md={12} sm={12}>
-        <Grid item xs={7} md={6} sm={6} style={{ marginTop: '50px' }}>
-          <Typography style={{ fontSize: '30px', color: 'white' }}>
-            Contato
+        <Grid container xs={12} sm={12} mt={30}>
+        <Grid item xs={12} sm={6} lg={4} md={4} style={{ marginTop:'40px' }}>
+      <Root>
+          <Typography style={{  fontSize:'25px' ,color: 'white', fontWeight:'bold' , fontFamily:'Raleway'}}>
+          Contato
           </Typography>
-          <Typography style={{ fontSize: '20px', color: 'white' }}>
-            20 Anos
-          </Typography>
-          <Typography style={{ fontSize: '20px', color: 'white' }}>
-            Solteiro
-          </Typography>
-          <Typography style={{ fontSize: '20px', color: 'white' }}>
+          </Root>
+          <Typography style={{ fontSize: '17px', color: 'white' , fontFamily:'Raleway' }}>
             (11)946362595
           </Typography>
-          <Typography style={{ fontSize: '20px', color: 'white' }}>
-            Rua Geraldo do brumado - Grajaú
-          </Typography>
-        </Grid>
-        <Grid item xs={4} style={{ marginTop: '60px' }}>
-          <Typography style={{ fontSize: '30px', color: 'white' }}>
-            Redes Sociais
+          <Typography style={{ fontSize: '17px', color: 'white' , fontFamily:'Raleway'}}>
+            Rua Geraldo do Brumado - Grajaú
           </Typography>
           <Link
             underline='none'
             color={'rgba(255, 255, 255, 0.87)'}
-            fontSize='20px'
+            fontSize='15px'
+            fontFamily='Raleway, sans-serif;'
+            href="malito:https://mail.google.com/mail/u/1/#inbox? subject= subject text"
+          >
+            gabriel.vieira2595@gmail.com
+          </Link>
+        </Grid>
+        <Grid item xs={12} sm={6} lg={4} md={4} style={{ marginTop:'40px' }}>
+          <Typography style={{ fontSize: '25px', color: 'white', fontWeight:'bold', fontFamily:'Raleway' }}>
+            Informações Pesoais
+          </Typography>
+          <Typography style={{ fontSize: '17px', color: 'white', fontFamily:'Raleway' }}>
+            Solteiro
+          </Typography>
+          <Typography style={{ fontSize: '17px', color: 'white', fontFamily:'Raleway' }}>
+            20 anos
+          </Typography>
+          <Typography style={{ fontSize: '17px', color: 'white', fontFamily:'Raleway' }}>
+            Preto
+          </Typography>
+          <Typography style={{ fontSize: '17px', color: 'white', fontFamily:'Raleway' }}>
+            Masculino
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={12}  lg={4} md={4} style={{ marginTop:'40px' }}>
+          <Typography style={{ fontSize: '30px', color: 'white', fontWeight:'bold' }}>
+            Redes Sociais
+          </Typography>
+          <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.8 }}>
+          <Link
+            underline='none'
+            color={'rgba(255, 255, 255, 0.87)'}
+            fontSize='17px'
             fontFamily='Raleway, sans-serif;'
             href='https://github.com/GabrielVRM'
           >
             GitHub
           </Link>
+          </motion.div>
           <br />
+          <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.8 }}>
           <Link
             underline='none'
             color={'rgba(255, 255, 255, 0.87)'}
-            fontSize='20px'
+            fontSize='17px'
             fontFamily='Raleway, sans-serif;'
             href='https://www.linkedin.com/feed/'
-          >
+            >
             Linkedin
           </Link>
-        </Grid>
-        <Grid item xs={12} style={{ marginTop: '60px' }}>
-          <motion.div whileHover={{ scale: 0.6 }} whileTap={{ scale: 1.8 }}>
-            <img
-              src={Gabriel}
-              style={{
-                borderRadius: '500px',
-                maxWidth: '100%',
-                width: '220px',
-                padding: '10px'
-              }}
-            />
           </motion.div>
         </Grid>
+        {/* <Grid item xs={12} style={{ marginTop: '30px' }}>
+            <Img
+            src={Gabriel}
+            style={{
+                borderRadius: '500px',
+                maxWidth: '100%',
+                width: '150px',
+                
+              }}
+              />
+              </motion.div>
+            </Grid> */}
       </Grid>
+           
     </Footer>
   )
 }
