@@ -1,32 +1,34 @@
-import SectionOne from './Components/OneSection'
-import SectionTwo from './Components/SecondSection'
-import SectionTheer from './Components/Theerd'
-import Cursos from './Components/Theerd'
-import SectionFour from './Components/FourSection'
+import SectionOne from './Components/presentation'
+import SectionTwo from './Components/experience'
+import SectionTheer from './Components/language&Frameworks'
+import SectionFour from './Components/Footer'
+import Courses from './Components/courses'
 import { Main, Section } from './Styles/GlobalStyled'
 
 export default function App () {
   return (
     <>
-      <Main style={{ height: '610vh' }}>
-        <Section style={{ height: '70%' }}>
+      <Main style={{ height: '650vh' }}>
+        <Section style={{ height: '60%' }}>
           <SectionOne />
         </Section>
         <Section
           style={{
-            height: '25%',
-            background: '#f7f7ff',
+            height: '35%',
             borderRadius: '40%',
             width: '100%',
-            marginBottom:'400px',
+            
           }}
         >
           <SectionTwo />
         </Section>
-        <Section style={{ height: '18%' }}>
+        <Section style={{ height: '8%'  }}>
+          <Courses />
+        </Section>
+        <Section style={{ height: '15%', marginTop:'500px' }}>
           <SectionTheer />
         </Section>
-        <Section style={{ height:'auto', background:'#000000', }}>
+        <Section style={{ height: 'auto', background: '#000000' }}>
           <SectionFour />
         </Section>
       </Main>

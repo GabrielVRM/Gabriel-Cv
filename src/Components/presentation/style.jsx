@@ -2,15 +2,13 @@ import styled from '@emotion/styled'
 
 export const GridStyle = styled.div`
   border-radius: 100px;
- 
 
- 
   @keyframes scannig {
     from {
       width: 0;
     }
     to {
-      width: 18.5em;
+      width: 22.5em;
     }
   }
 
@@ -31,6 +29,20 @@ export const GridStyle = styled.div`
       transform: translate(0%) rotate(360deg);
     }
   }
+@media (max-width: 375px){
+  div{
+width: 100%;
+
+    @keyframes scannig {
+    from {
+      width: 0;
+    }
+    to {
+      width: 10em;
+    }
+  }  }
+}
+
 `
 
 export const Typography = styled.div`
@@ -44,8 +56,8 @@ export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 15px;
   /* border-right: 2px solid rgba(0, 0, 0, 0.75); */
-  animation: cursor 300ms steps(30) infinite normal,
-    scannig 4s 2s steps(100) infinite normal;
+  animation: cursor 500ms steps(30) infinite normal,
+    scannig 4s 4s steps(100) infinite normal;
   white-space: nowrap;
    overflow: hidden;
    @media (max-width:372px){

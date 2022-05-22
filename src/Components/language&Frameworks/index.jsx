@@ -1,5 +1,5 @@
 import { Grid, Typography } from '@mui/material'
-import { DivImage } from './style'
+import { DivImage, TypographiaLanguage,Tag, Global } from './style'
 import { motion } from 'framer-motion'
 
 export default function SectionTheer () {
@@ -52,15 +52,30 @@ export default function SectionTheer () {
       alt: 'Rafa-CSS'
     }
   ]
+  const Code = "code </>"
   return (
-    <Grid container justifyContent='center'>
+    <Global>
+  <motion.div
+    animate={{
+      scale: [1, 2, 2, 1, 1],
+      rotate: [0, 20, 0, 50, 0],
+      borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+    }}
+  >
+
+     <Tag>
+       {Code}
+       </Tag>
+  </motion.div>
+
+           <TypographiaLanguage container justifyContent='center'>
       <Grid item xs={12}   >
         <Typography
           fontSize={40}
           textAlign='center'
           fontFamily='Raleway, sans-serif'
           marginBottom={1}
-          marginTop={20}
+          marginTop={0}
         >
           Linguagens e Frameworks
         </Typography>
@@ -74,19 +89,20 @@ export default function SectionTheer () {
         </Typography>
         </Grid>
         <Grid container xs={12} justifyContent="center" >
-        <DivImage>
+          <DivImage>
           {listImage.map(item => (
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
               <img
                 src={`${item.img}`}
                 srcSet={`${item.img}`}
                 alt={item.title}
-              />
+                />
             </motion.div>
           ))}
         </DivImage>
         </Grid>
-    </Grid>
+    </TypographiaLanguage>
+                </Global>
 
 
 )

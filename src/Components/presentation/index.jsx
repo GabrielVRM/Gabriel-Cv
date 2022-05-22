@@ -7,7 +7,7 @@ import ReactIcon from '../../Img/React-icon.svg.png'
 
 const SectionOne = () => {
   const { scrollYProgress } = useViewportScroll()
-  const framerOpacity = useTransform(scrollYProgress, [0, 0.551], [0, 1])
+  const framerOpacity = useTransform(scrollYProgress, [0, 0.351], [0, 1])
   const frameScale = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
   //Segundo Motion
@@ -38,7 +38,7 @@ const SectionOne = () => {
                 </TypographyFront>
                 <Img
                   src={ReactIcon}
-                  style={{ width: '250px', marginTop: '0px' }}
+                  style={{ width: '250px', marginTop: '60px' }}
                 />
           </Grid>
         </motion.div>
@@ -59,7 +59,7 @@ const SectionOne = () => {
           <Grid container xs={12} justifyContent='center'>
             <GridStyle>
               <TypographyCursor style={{ fontSize: '70px' }}>
-                Gabriel Vieira Reis Maximo
+                Gabriel Vieira Reis
               </TypographyCursor>
               <Typography style={{ fontSize: '80px',  }}>Developer</Typography>
             </GridStyle>
