@@ -1,18 +1,18 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography, Link } from '@mui/material'
 import { Sticky } from '../../Styles/GlobalStyled'
 import {Global} from './styled'
+import CertificadoHavard from '../../Img/CertificadoHavard.png'
+
 export default function Courses () {
-
   return (
-
     <Global>
+      
       <Sticky>
-      <Grid container  justifyContent='center' mt={10} >
+      <Grid container  justifyContent='center' >
     <Grid item  textAlign='center' >
       <Typography
         style={{
           fontFamily: 'Raleway',
-          fontWeight: '600',
           fontSize: '40px',
           marginBottom: '40px'
         }}
@@ -20,8 +20,10 @@ export default function Courses () {
         Cursos Realizados
       </Typography>
       <Typography style={{ fontFamily: 'Raleway', fontSize: '22px', marginBottom:'25px' }}>
-        Havard - introdução a Ciencias da Computação{' '}
-        <span style={{ fontSize: '18px', color:'green' }}>concluido</span>
+     Havard - introdução a Ciencias da Computação <br/>
+      <Link underline="hover"   onClick={()  => {
+console.log('hello' )
+      }}  href={CertificadoHavard} style={{fontFamily:'Raleway'}}>Certificado Havard</Link>
       </Typography>
       <Typography style={{ fontFamily: 'Raleway', fontSize: '22px', marginBottom:'25px' }}>
         JavaScript - Udemy{' '}
@@ -45,5 +47,7 @@ export default function Courses () {
       </Sticky>
       </Global>
 
-  )
+
+)
+
 }

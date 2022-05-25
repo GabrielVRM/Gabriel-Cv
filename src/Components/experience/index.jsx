@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material'
 import { Sticky } from '../../Styles/GlobalStyled'
-import { TypographySecondSection } from './style'
+import { TypographySecondSection, Tag } from './style'
 
 export default function SectionTwo () {
   // const { scrollYProgress } = useViewportScroll()
@@ -10,7 +10,7 @@ export default function SectionTwo () {
   //Segundo Motion
   // const framerOpacitySecond = useTransform(scrollYProgress, [0.3, 0], [0, 1])
   // const frameScaleSecond = useTransform(scrollYProgress, [1, 0.1], [0.1, 0.7])
-
+  const Code = 'code </>'
   return (
     <>
       <Grid container xs={12} lg={12} justifyContent='center'  >
@@ -87,6 +87,7 @@ export default function SectionTwo () {
             landing Page com Wordpress.
           </TypographySecondSection>
           </Grid>
+      <Tag>{Code}</Tag>
         </Grid>
       </Grid>
     </>

@@ -85,3 +85,11 @@ export const TypographyCursor = styled.div`
   text-align: center;
   
  `;
+ export const Tag = styled.div`
+ margin-top: 150px;
+ text-align: center;
+ margin-bottom: 100px;
+ font-family: Raleway, sans-serif;
+ font-size: 60px;
+ 
+ `;
