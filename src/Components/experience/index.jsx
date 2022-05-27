@@ -11,6 +11,7 @@ export default function SectionTwo () {
   // const frameScaleSecond = useTransform(scrollYProgress, [1, 0.1], [0.1, 0.7])
   const Code = 'code </>'
   return (
+    
     <>
       <Grid container xs={12} lg={12} justifyContent='center'  >
           <TypographySecondSection style={{ fontSize: 35,  letterSpacing:12 }}>Experiencia</TypographySecondSection>
