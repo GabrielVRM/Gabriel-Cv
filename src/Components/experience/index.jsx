@@ -1,5 +1,4 @@
 import { Grid } from '@mui/material'
-import { Sticky } from '../../Styles/GlobalStyled'
 import { TypographySecondSection, Tag } from './style'
 
 export default function SectionTwo () {
@@ -50,7 +49,10 @@ export default function SectionTwo () {
             Onepay <br />{' '}
             <p style={{ fontSize:16}}> estagiario de Ti - 06/2021 a 03/2021</p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20, }}>
+          <TypographySecondSection style={{ 
+            fontSize: 20, 
+          padding: '20px 50px 20px',
+ }}>
             Realizei Suporte Técnico, Manutenção de Desktops, Atualização de
             Sistema Operacional (Windows e Ubunto), configurações de E-mail,
             auxiliei em projetos de Desenvolvimento, Trabalhei com Linguagens
@@ -78,7 +80,8 @@ export default function SectionTwo () {
               Analista de Ti - 03/2022 - Atualmente
             </p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20,  }}>
+          <TypographySecondSection style={{ fontSize: 20,           padding: '20px 50px 20px',
+ }}>
             Banco de Dados Mysql - Utilizando a Linguagem Sql manipulando dados
             para extrair relarorios e realizar updates, Suporte Tecnico em Geral
             ( manutenção em computadores e auxilio rotineiro com problemas de

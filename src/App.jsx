@@ -14,9 +14,9 @@ export default function App () {
         </Section>
         <Section
           style={{
-            height: '35%',
+            height: '38%',
             borderRadius: '40%',
-            width: '100%',
+            width: 'auto',
             
           }}
         >

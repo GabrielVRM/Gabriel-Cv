@@ -11,16 +11,21 @@ import {
 import { Grid } from '@mui/material'
 import ReactIcon from '../../Img/React-icon.svg.png'
 import { Tag } from './style'
+
+
+
+
 const SectionOne = () => {
   const { scrollYProgress } = useViewportScroll()
   const framerOpacity = useTransform(scrollYProgress, [0, 0.351], [0, 1])
   const frameScale = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
+
+
   //Segundo Motion
   const framerOpacitySecond = useTransform(scrollYProgress, [0.3, 0], [0, 1])
   const frameScaleSecond = useTransform(scrollYProgress, [1, 0.1], [0.1, 0.7])
   const Code = 'code </>'
-
   return (
     <>
       {/* -------------------- Segunda Section do Site -------------------------- */}
@@ -70,7 +75,7 @@ const SectionOne = () => {
             scale: frameScaleSecond
           }}
         >
-          <Grid container xs={12} justifyContent='center'>
+          <Grid container xs={12}  justifyContent='center'>
             <GridStyle>
               <TypographyCursor style={{ fontSize: '70px' }}>
                 Gabriel Vieira Reis
