@@ -4,12 +4,14 @@ import SectionTheer from './Components/language&Frameworks'
 import SectionFour from './Components/Footer'
 import Courses from './Components/courses'
 import { Main, Section } from './Styles/GlobalStyled'
+import Header from './Components/Header'
 
 export default function App () {
   return (
     <>
       <Main style={{ height: '650vh' }}>
         <Section style={{ height: '60%' }}>
+        <Header/>
           <SectionOne />
         </Section>
         <Section
@@ -17,6 +19,7 @@ export default function App () {
             height: '38%',
             borderRadius: '40%',
             width: 'auto',
+            marginTop:'100px'
             
           }}
         >

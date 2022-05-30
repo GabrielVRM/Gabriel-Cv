@@ -10,9 +10,9 @@ export const TypographySecondSection = styled.div`
 `;
 
 export const Tag = styled.div`
-margin-top: 120px;
+margin-top: 0px;
 text-align: center;
-margin-bottom: 200px;
+margin-bottom: 0px;
 font-family: Raleway, sans-serif;
 font-size: 30px;
 

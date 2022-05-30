@@ -20,7 +20,7 @@ export default function SectionTwo () {
           <TypographySecondSection
             style={{
               fontSize: 25,
-              marginBottom: 10,
+              
               marginTop: 25,
               color: '#000000',
               fontWeight: '600',
@@ -31,9 +31,10 @@ export default function SectionTwo () {
             Nave A vela <br />{' '}
             <p style={{ fontSize: 16,  }}>Jovem Aprendiz - 11/2019 a 01/2021 </p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20, marginBottom:"100px" }}>
+          <TypographySecondSection style={{ fontSize: 20, padding: '20px 50px 20px',
+ }}>
             Acompanhamento dos produtos da empresa, cuidando do SLA, analisando
-            e criando Dashboards no Google Data Studio e Excel
+            e criando Dashboards no Google Data Studio Google Sheeats e Excel
           </TypographySecondSection>
 <Grid/>
 <Grid item xs={12} lg={12} textAlign='center' mt={20}  style={{background: '#f7f7ff', borderRadius:"40%", height: 'auto', zIndex:1
@@ -81,7 +82,7 @@ export default function SectionTwo () {
               Analista de Ti - 03/2022 - Atualmente
             </p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20,           padding: '20px 50px 20px',
+          <TypographySecondSection style={{ fontSize: 20,padding: '20px 50px 20px',
  }}>
             Banco de Dados Mysql - Utilizando a Linguagem Sql manipulando dados
             para extrair relarorios e realizar updates, Suporte Tecnico em Geral
@@ -91,7 +92,7 @@ export default function SectionTwo () {
             landing Page com Wordpress.
           </TypographySecondSection>
           </Grid>
-      <Tag>{Code}</Tag>
+      
         </Grid>
       </Grid>
     </>

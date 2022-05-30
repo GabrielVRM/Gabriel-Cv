@@ -17,6 +17,5 @@ top: 0;
 left: 0;
 right: 0;
 text-align: center;
-margin: 50px;
 
 `;

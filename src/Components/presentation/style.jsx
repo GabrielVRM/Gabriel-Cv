@@ -2,23 +2,23 @@ import styled from '@emotion/styled'
 
 export const GridStyle = styled.p`
   border-radius: 100px;
+  width: auto;
 
-@media(min-width: 300px){
-  div{ 
-
-  }
-}
-
+   @media (max-width: 400px) {
+    div {
+font-size: 50px;
+margin: 25px;
+    }
+  } 
 
   @keyframes scannig {
     from {
       width: 0;
     }
     to {
-      width: 10.5em;
+      width: 11.5em;
     }
   }
-
 
   @keyframes cursor {
     from {
@@ -37,54 +37,55 @@ export const GridStyle = styled.p`
       transform: translate(0%) rotate(360deg);
     }
   }
-@media (max-width: 375px){
-  div{
-width: 100%;
-
-  }
-}
 
 `
 
 export const Typography = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 15px;
-
-  
-
 `
 
 export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   /* border-right: 2px solid rgba(0, 0, 0, 0.75); */
-   animation: cursor 500ms steps(30) infinite normal,
-    scannig 4s 2s steps(100) infinite normal;  
-   white-space: nowrap;
-   overflow: hidden; 
+  animation: cursor 500ms steps(30) infinite normal,
+    scannig 4s 2s steps(100) infinite normal;
+  white-space: nowrap;
+  overflow: hidden;
+`
+export const Img = styled.img`
+  animation: rotate 3s infinite linear;
+  @media (max-width: 900px) {
+    img {
+      background-color: black;
+    }
+  }
+`
 
-`;
- export const Img = styled.img`
-   animation: rotate 1.5s infinite linear;
-   @media (max-width:900px){
-    Img{
-       background-color: black;
-     }
-   }
- `;
-
- export const TypographyFront = styled.div`
+export const TypographyFront = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 25px;
   text-align: center;
-  
-  
- `;
- export const Tag = styled.div`
- margin-top: 150px;
- text-align: center;
- margin-bottom: 100px;
- font-family: Raleway, sans-serif;
- font-size: 60px;
- 
- `;
+  overflow: hidden;
+  white-space: nowrap;
+`
+export const Tag = styled.div`
+  margin-top: 0px;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 60px;
+`
+export const GridFront = styled.div`
+  @media (max-width: 375px) {
+    div {
+      font-family: Raleway, sans-serif;
+      white-space: normal;
+      width: 100% ;
+      letter-spacing: 10;
+
+      
+
+    }
+  }
+`

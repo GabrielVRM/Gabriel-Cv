@@ -2,6 +2,7 @@ import { Grid, Link, Typography } from '@mui/material'
 import { Footer,Img } from './style'
 import { motion } from 'framer-motion'
 import { styled } from '@mui/material/styles';
+import Gabriel from '../../Img/Gabriel.jpg';
 
 
 
@@ -28,7 +29,7 @@ fontSize:'',
   }));
   return (
     <Footer>
-        <Grid container xs={12} sm={12} mt={30}>
+        <Grid container xs={12} sm={12} mt={30} justifyContent='center'>
         <Grid item xs={12} sm={6} lg={4} md={4} style={{ marginTop:'40px' }}>
       <Root>
           <Typography style={{  fontSize:'25px' ,color: 'white', fontWeight:'bold' , fontFamily:'Raleway'}}>
@@ -96,7 +97,8 @@ fontSize:'',
           </Link>
           </motion.div>
         </Grid>
-        {/* <Grid item xs={12} style={{ marginTop: '30px' }}>
+         <Grid item xs={12} sm={12} lg={3} textAlign='center' style={{ marginTop: '30px' }}>
+         <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
             <Img
             src={Gabriel}
             style={{
@@ -107,53 +109,10 @@ fontSize:'',
               }}
               />
               </motion.div>
-            </Grid> */}
+            </Grid>
       </Grid>
            
     </Footer>
   )
 }
 
-{
-  /* <Grid container xs={12} justifyContent='center' mt={15}>
-  <Grid item xs={7} mt={5} textAlign='center'>
-    <Typography style={{ fontSize: '60px' }}>Contato</Typography>
-    <Typography style={{ fontSize: '25px' }}>20 Anos</Typography>
-    <Typography style={{ fontSize: '25px' }}>Solteiro</Typography>
-    <Typography style={{ fontSize: '25px' }}>(11)946362595</Typography>
-    <Typography style={{ fontSize: '25px' }}>
-      Rua Geraldo do brumado - Grajaú
-    </Typography>
-    <Link
-      underline='none'
-      color={'rgba(0, 0, 0, 0.87)'}
-      fontSize='25px'
-      fontFamily='Raleway, sans-serif;'
-      href='https://github.com/GabrielVRM'
-    >
-      GitHub
-    </Link>
-    <br />
-    <Link
-      underline='none'
-      color={'rgba(0, 0, 0, 0.87)'}
-      fontSize='25px'
-      fontFamily='Raleway, sans-serif;'
-      href='https://www.linkedin.com/feed/'
-      >
-      Linkedin
-    </Link>
-  </Grid>
-  <Grid item xs={4} mt={15}>
-    <img
-      src={Gabriel}
-      style={{
-        borderRadius: '500px',
-        maxWidth: '100%',
-        width: '300px',
-        padding: '0px'
-      }}
-      />
-  </Grid>
-</Grid>          */
-}

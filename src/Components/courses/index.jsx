@@ -2,6 +2,7 @@ import { Grid, Typography, Link } from '@mui/material'
 import { Sticky } from '../../Styles/GlobalStyled'
 import { Global } from './styled'
 import CertificadoHavard from '../../Img/CertificadoHavard.png'
+import CertificadoPowerBi from '../../Img/CertificadoPowerBi.jpg'
 
 export default function Courses () {
   return (
@@ -27,10 +28,8 @@ export default function Courses () {
             >
               Havard - introdução a Ciencias da Computação <br />
               <Link
-                underline='hover'
-                onClick={() => {
-                  console.log('hello')
-                }}
+                underline='none'
+                color={'green'}
                 href={CertificadoHavard}
                 style={{ fontFamily: 'Raleway' }}
               >
@@ -68,10 +67,15 @@ export default function Courses () {
                 marginBottom: '25px'
               }}
             >
-              Power Bi - udemy{' '}
-              <span style={{ fontSize: '20px', color: 'green' }}>
-                concluido
-              </span>
+              Power Bi - udemy<br/>
+              <Link
+                underline='none'
+                color={'green'}
+                href={CertificadoPowerBi}
+                style={{ fontFamily: 'Raleway' }}
+              >
+                Certificado PowerBi
+              </Link>
             </Typography>
             <Typography
               style={{
