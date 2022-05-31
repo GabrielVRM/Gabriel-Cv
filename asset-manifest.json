@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/Gabriel-Cv/static/js/main.44c92738.js",
+    "main.js": "/Gabriel-Cv/static/js/main.326bafcc.js",
     "static/media/CertificadoHavard.png": "/Gabriel-Cv/static/media/CertificadoHavard.aeb3b495baa079e432d8.png",
     "static/media/CertificadoPowerBi.jpg": "/Gabriel-Cv/static/media/CertificadoPowerBi.62c456a2603247aa5af9.jpg",
     "static/media/React-icon.svg.png": "/Gabriel-Cv/static/media/React-icon.svg.f6b89d232c9bc9f828e5.png",
     "static/media/Gabriel.jpg": "/Gabriel-Cv/static/media/Gabriel.3898a93f7fa9759eb282.jpg",
     "index.html": "/Gabriel-Cv/index.html",
-    "main.44c92738.js.map": "/Gabriel-Cv/static/js/main.44c92738.js.map"
+    "main.326bafcc.js.map": "/Gabriel-Cv/static/js/main.326bafcc.js.map"
   },
   "entrypoints": [
-    "static/js/main.44c92738.js"
+    "static/js/main.326bafcc.js"
   ]
 }
