@@ -13,7 +13,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '40px',
+                fontSize: '35px',
                 marginBottom: '40px'
               }}
             >
@@ -22,7 +22,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >
@@ -39,7 +39,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >
@@ -51,7 +51,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >
@@ -63,7 +63,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >
@@ -80,7 +80,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >
@@ -93,7 +93,7 @@ export default function Courses () {
             <Typography
               style={{
                 fontFamily: 'Raleway',
-                fontSize: '22px',
+                fontSize: '20px',
                 marginBottom: '25px'
               }}
             >

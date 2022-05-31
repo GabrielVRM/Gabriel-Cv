@@ -14,12 +14,12 @@ export default function SectionTwo () {
     
     <>
       <Grid container xs={12} lg={12} justifyContent='center'  >
-          <TypographySecondSection style={{ fontSize: 35,  letterSpacing:12 }}>Experiencia</TypographySecondSection>
+          <TypographySecondSection style={{ fontSize: 30,  letterSpacing:12 }}>Experiencia</TypographySecondSection>
         <Grid item xs={12} lg={12}  mt={6}  textAlign='center' style={{background: '#f7f7ff', borderRadius:"40%", height: '240px', zIndex:1
 }}>
           <TypographySecondSection
             style={{
-              fontSize: 25,
+              fontSize: 22,
               
               marginTop: 25,
               color: '#000000',
@@ -29,9 +29,9 @@ export default function SectionTwo () {
             }}
           >
             Nave A vela <br />{' '}
-            <p style={{ fontSize: 16,  }}>Jovem Aprendiz - 11/2019 a 01/2021 </p>
+            <p style={{ fontSize: 14,  }}>Jovem Aprendiz - 11/2019 a 01/2021 </p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20, padding: '20px 50px 20px',
+          <TypographySecondSection style={{ fontSize: 18, padding: '20px 50px 20px',
  }}>
             Acompanhamento dos produtos da empresa, cuidando do SLA, analisando
             e criando Dashboards no Google Data Studio Google Sheeats e Excel
@@ -41,7 +41,7 @@ export default function SectionTwo () {
 }}> 
           <TypographySecondSection
             style={{
-              fontSize: 25,
+              fontSize: 22,
               marginBottom: 10,
               color: '#000000',
               fontWeight: '600',
@@ -49,10 +49,10 @@ export default function SectionTwo () {
             }}
           >
             Onepay <br />{' '}
-            <p style={{ fontSize:16}}> estagiario de Ti - 06/2021 a 03/2021</p>
+            <p style={{ fontSize:14}}> estagiario de Ti - 06/2021 a 03/2021</p>
           </TypographySecondSection>
           <TypographySecondSection style={{ 
-            fontSize: 20, 
+            fontSize: 18, 
           padding: '20px 50px 20px',
  }}>
             Realizei Suporte Técnico, Manutenção de Desktops, Atualização de
@@ -70,7 +70,7 @@ export default function SectionTwo () {
 }}>
           <TypographySecondSection
             style={{
-              fontSize: 25,
+              fontSize: 22,
               marginBottom: 10,
               color: '#000000',
               fontWeight: '600',
@@ -78,11 +78,11 @@ export default function SectionTwo () {
             }}
           >
             Onepay <br />{' '}
-            <p style={{ fontSize: 16 }}>
+            <p style={{ fontSize: 14 }}>
               Analista de Ti - 03/2022 - Atualmente
             </p>
           </TypographySecondSection>
-          <TypographySecondSection style={{ fontSize: 20,padding: '20px 50px 20px',
+          <TypographySecondSection style={{ fontSize: 18,padding: '20px 50px 20px',
  }}>
             Banco de Dados Mysql - Utilizando a Linguagem Sql manipulando dados
             para extrair relarorios e realizar updates, Suporte Tecnico em Geral

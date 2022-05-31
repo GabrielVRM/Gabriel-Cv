@@ -12,6 +12,7 @@ export const Section = styled.div`
 `
 export const Sticky = styled.div`
 height: 100vh;
+width: 100%;
 position: sticky;
 top: 0;
 left: 0;

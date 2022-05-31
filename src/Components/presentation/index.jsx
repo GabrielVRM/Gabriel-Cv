@@ -80,7 +80,7 @@ const SectionOne = () => {
         >
           <Grid container xs={12} lg={12} md={12} justifyContent='center'>
             <GridStyle>
-              <TypographyCursor style={{ fontSize: '100px' }}>
+              <TypographyCursor style={{ fontSize: '80px', textAlign:'center' }}>
                 Developer
               </TypographyCursor>
           <motion.div

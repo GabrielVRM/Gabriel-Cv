@@ -12,7 +12,7 @@ export default function App () {
       <Main style={{ height: '650vh' }}>
         <Section style={{ height: '60%' }}>
         <Header/>
-          <SectionOne />
+         <SectionOne /> 
         </Section>
         <Section
           style={{

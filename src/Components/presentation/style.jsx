@@ -2,12 +2,12 @@ import styled from '@emotion/styled'
 
 export const GridStyle = styled.p`
   border-radius: 100px;
-  width: auto;
 
    @media (max-width: 400px) {
     div {
 font-size: 50px;
 margin: 25px;
+
     }
   } 
 
@@ -16,7 +16,7 @@ margin: 25px;
       width: 0;
     }
     to {
-      width: 11.5em;
+      width: 10em;
     }
   }
 
@@ -50,9 +50,10 @@ export const TypographyCursor = styled.div`
   letter-spacing: 10px;
   /* border-right: 2px solid rgba(0, 0, 0, 0.75); */
   animation: cursor 500ms steps(30) infinite normal,
-    scannig 4s 2s steps(100) infinite normal;
+    scannig 4s 2s steps(100) normal;
   white-space: nowrap;
   overflow: hidden;
+
 `
 export const Img = styled.img`
   animation: rotate 3s infinite linear;
