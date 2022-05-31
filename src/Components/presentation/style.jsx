@@ -49,8 +49,8 @@ export const TypographyCursor = styled.div`
   font-family: 'Raleway', sans-serif;
   letter-spacing: 10px;
   /* border-right: 2px solid rgba(0, 0, 0, 0.75); */
-  animation: cursor 500ms steps(30) infinite normal,
-    scannig 4s 2s steps(100) normal;
+  /* animation: cursor 500ms steps(30) infinite normal,
+    scannig 4s 2s steps(100) normal; */
   white-space: nowrap;
   overflow: hidden;
 
